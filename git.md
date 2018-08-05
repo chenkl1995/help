@@ -39,6 +39,7 @@
 	> $ git push -u origin master　　　　　　　-- later push  
 	> $ git clone git@github.com:chenkl1995/help.git  
 	> $ git clone https://github.com/chenkl1995/help.git  
+	> $ git pull  
 8. Branch
 	> $ git branch  
 	> $ git branch \<branch name>  
