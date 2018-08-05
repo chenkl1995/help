@@ -5,7 +5,7 @@
 2. Initial　　　　　　　--> ~/.gitconfig  
 	`$ git help tutorial`  
 	> $ git config --global user.name "MornSun"  
-	> $ git config --global user.email chenkl1995@gmail.com  
+	> $ git config --global user.email "chenkl1995@gmail.com"  
 	> $ git config --global core.editor vim
 6. Remote Repository
 	> $ ls ~/.ssh/id_rsa ~/.ssh/id_rsa.pub  
