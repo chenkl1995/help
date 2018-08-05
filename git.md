@@ -34,6 +34,7 @@
 	> $ cd \<Repository Dir\>  
 	> $ git remote add origin git@github.com:chenkl1995/\<repo name\>.git  
 	> $ git remote add origin https://github.com:chenkl1995/\<repo name\>.git  
+	> $ git remote -v  
 	> $ git push -u origin master　　　　　　　-- 1st push  
 	> $ git push -u origin master　　　　　　　-- later push  
 	> $ git clone git@github.com:chenkl1995/help.git  
