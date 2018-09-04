@@ -69,3 +69,18 @@
 - Reference  
 	* [Git Introduction Translation in CSDN](https://blog.csdn.net/hudashi/article/details/7661198)  
 	* [Git by liaoxuefeng](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)  
+
+<br /><br />
+- [Only clone a subdir of a repo](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository)
+	 
+	> $ mkdir \<repo>  
+	> $ cd \<repo>  
+	> $ git init  
+	> $ git remote add -f origin \<url>  
+	> 
+	> $ git config core.sparseCheckout true  
+	> 
+	> $ echo "some/dir/" >> .git/info/sparse-checkout  
+	> $ echo "another/sub/tree" >> .git/info/sparse-checkout   
+	> 
+	> $ git pull origin master  
