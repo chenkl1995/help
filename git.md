@@ -30,9 +30,9 @@
 			3. Staged　　`A`    
 		2. Un-Traked　　 `??`  
 	> 
-	> $ git clone \<URL by https/git/ssh> [DirName]
+	> $ git clone \<URL by https/git/ssh> [DirName]  
 	> $ git clone git@github.com:chenkl1995/help.git  
-	> $ git clone https://github.com/chenkl1995/help.git 
+	> $ git clone https://github.com/chenkl1995/help.git  
 	> 
 	> $ cd \<RepoDir>  
 	> $ git init  
@@ -80,18 +80,18 @@
 	> $ git remote add origin https://github.com/chenkl1995/<repo name\>.git  
 	> $ git remote -v  
 	> 
-	> $ git remote show <RemoteName>  
+	> $ git remote show \<RemoteName>  
 	> $ git remote show origin  
 	> 
 	> $ git pull　　　　　　　　　　　　　　　-- 自动合并入当前本地分支  
-	> $ git fetch <RemoteName>　　　　　　　　-- 手动合并到本地内容  
+	> $ git fetch \<RemoteName>　　　　　　　　-- 手动合并到本地内容  
 	> 
-	> $ git push <RemoteName> <BranchName>
+	> $ git push \<RemoteName> \<BranchName>  
 	> $ git push -u origin master　　　　　　　-- 1st push  
 	> $ git push origin master　　　　　　　　-- later push  
 	> 
-	> $ git remote rename <OldName> <NewName>  
-	> $ git remote rm <RemoteName>  
+	> $ git remote rename \<OldName> \<NewName>  
+	> $ git remote rm \<RemoteName>  
 8. Branch
 	> $ git branch  
 	> $ git branch \<branch name>  
