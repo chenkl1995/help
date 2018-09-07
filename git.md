@@ -6,7 +6,18 @@
 	`$ git help tutorial`  
 	> $ git config --global user.name "MornSun"  
 	> $ git config --global user.email "chenkl1995@gmail.com"  
-	> $ git config --global core.editor vim
+	> $ git config --global core.editor vim  
+	> 
+	> git config --system　　　　--> etc/gitconfig  
+	> git config --global　　　　 --> ~/.gitconfig ~/.config/git/config  
+	> git config　　　　　　　　 --> .git/config  
+	> 
+	> git config --list
+	> git config <key>　`git config user.name`
+	> 
+	> git help \<verb>　　　　　 `git help config`  
+	> git <verb> --help  
+	> man git-\<verb>  
 6. Remote Repository
 	> $ ls ~/.ssh/id_rsa ~/.ssh/id_rsa.pub  
 	> $ ssh-keygen -t rsa -C "chenkl1995@gmail.com"  
