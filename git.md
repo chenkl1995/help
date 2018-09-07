@@ -18,6 +18,13 @@
 	> git help \<verb>　　　　　 `git help config`  
 	> git <verb> --help  
 	> man git-\<verb>  
+	>  
+	> $ git config --global alias.co checkout  
+	> $ git config --global alias.br branch  
+	> $ git config --global alias.ci commit  
+	> $ git config --global alias.st status  
+	> $ git config --global alias.unstage 'reset HEAD --'　　for $ git unstage fileA <==> $ git reset HEAD --fileA  
+	> $ git config --global alias.last 'log -1 HEAD'　　　　 for $ git last  
 6. Remote Repository
 	> $ ls ~/.ssh/id_rsa ~/.ssh/id_rsa.pub  
 	> $ ssh-keygen -t rsa -C "chenkl1995@gmail.com"  
