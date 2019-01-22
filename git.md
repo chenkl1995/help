@@ -143,3 +143,7 @@
 	> $ echo "another/sub/tree" >> .git/info/sparse-checkout   
 	> 
 	> $ git pull origin master  
+- Delete some commit both remote and local
+
+	> git reset --hard <commit_id>  
+	> git push --force  
