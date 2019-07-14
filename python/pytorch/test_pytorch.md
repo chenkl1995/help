@@ -42,3 +42,10 @@
 - Adadelta
 - RMSProp
 - Adam
+
+
+#### Nvidia Cuda Mem Leak
+```
+    > fuser -v /dev/nvidia*
+    > sudo kill -9 <pid>
+```
