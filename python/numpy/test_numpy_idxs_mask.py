@@ -2,7 +2,7 @@ import numpy as np
 
 lbl = [1, 1, 2, 3, 3, 3, 6, 7, 8, 8, 9, 10]
 # a = np.asarray(a)
-a = np.array(lbl)
+a = np.asarray(lbl)
 print(a)
 print()
 np.random.shuffle(a)
@@ -55,4 +55,34 @@ for i, num in enumerate(e):
 
     print()
 
-print(sort_idx[unique_idx[five_mask_[eight_mask_[range(len(e))]]]])
+'''
+pred = np.full_like(a, -1)
+# print(sort_idx[unique_idx[five_mask_[eight_mask_[range(len(e))]]]])
+_ = sort_idx[unique_idx[five_mask_[eight_mask_[range(len(e))]]]]
+# pred[_] = 1
+# pred[_] = [3, 4]
+pred[_] = 3, 4
+print(a)
+print(pred)
+'''
+
+# pred = [[]] * len(a)      # err
+pred = [[] for _ in range(len(a))]
+for i, num in enumerate(e):
+    # print(num)
+    # print('e idx = ', i)
+    raw_idx = sort_idx[unique_idx[five_mask_[eight_mask_[i]]]]
+    # pred[raw_idx].append(num)
+
+    import random
+    for _ in range(num):
+        pred[raw_idx].append(random.randint(0, 1))
+print(pred)
+
+from collections import Counter
+for i, p in enumerate(pred):
+    if len(p):
+        pred[i] = Counter(p).most_common(1)[0][0]
+    else:
+        pred[i] = -1
+print(pred)
